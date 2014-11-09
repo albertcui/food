@@ -9,6 +9,12 @@
   "main": "app/index.html",
   "license": "MIT",
   "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x",
+    "bootstrap": "3.3.0"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
