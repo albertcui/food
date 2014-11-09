@@ -1,0 +1,19 @@
+{
+  "name": "food",
+  "version": "0.0.0",
+  "homepage": "https://github.com/albertcui/food",
+  "authors": [
+    "albertcui <albertqcui+github@gmail.com>"
+  ],
+  "description": "Find food. Eat food.",
+  "main": "app/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
