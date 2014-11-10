@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Food</title>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
   <script src="/bower_components/angular/angular.js"></script>
   <script src="/bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
   <script src="js/controllers.js"></script>
@@ -15,8 +16,18 @@
         <p>Long {{long}}</p>
         <button class=".btn-lg btn btn-info" ng-click="findStuff()">FIND</button>
         <ul>
-            <li ng-repeat="place in data">
-                <span>{{place.name}}</span>
+            <li ng-repeat="place in data|orderBy:random">
+                <div ng-if=$first class="jumbotron">
+                    a href={{place.url}}>{{place.name}}</a>
+                    <span>Rating: {{place.rating}}</span>
+                    <span>Categories: {{place.categories}}</span>    
+                </div>
+                <div ng-if=!$first>
+                    <a href={{place.url}}>{{place.name}}</a>
+                    <span>Rating: {{place.rating}}</span>
+                    <span>Categories: {{place.categories}}</span>
+                    
+                </div>
             </li>
         </ul>
     </div>

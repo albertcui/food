@@ -20,4 +20,8 @@ foodApp.controller('FoodController', function($scope, $http, geolocation) {
           
         });      
     }
+    
+    $scope.random = function() {
+        return 0.5 - Math.random();
+    }
 })
