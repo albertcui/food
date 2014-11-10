@@ -6,7 +6,6 @@
     "albertcui <albertqcui+github@gmail.com>"
   ],
   "description": "Find food. Eat food.",
-  "main": "app/index.html",
   "license": "MIT",
   "private": true,
   "dependencies": {
