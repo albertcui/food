@@ -17,8 +17,7 @@ app.route('/find').get(function(req, res){
     console.log("lat " + req.query.lat)
     console.log("long " + req.query.long)
     yelp.search({term: "food", ll: req.query.lat + "," + req.query.long}, function(error, data) {
-      console.log(error);
-      console.log(data);
+      return res.send(data);
     });
 })
 

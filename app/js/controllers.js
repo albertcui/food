@@ -12,7 +12,7 @@ foodApp.controller('FoodController', function($scope, $http, geolocation) {
                 params: {lat: data.coords.latitude, long: data.coords.longitude }
             })
             .success(function(data, status, headers, config){
-                return data;
+                $scope.data =  data.businesses;
             })
             .error(function(data, status, headers, config){
                 return "ERROR!"
