@@ -1,13 +1,19 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="foodApp">
 <head>
   <meta charset="utf-8">
   <title>Food</title>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
   <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
 
 <body>
-    <p>1 + 2 = {{ 1 + 2 }}</p>
+    <div ng-controller="FoodController">
+        <p>Lat {{lat}}</p>
+        <p>Long {{long}}</p>
+        <button class=".btn-lg btn btn-info" ng-click="findStuff()">FIND</button>
+    </div>
 </body>
 </html>
